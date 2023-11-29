@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Multi-Page Form</title>
+    <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+</head>
+
+<body>
+    <div class="container" id="homepage">
+        <h2>Welcome to the Form</h2>
+        <p>Timing for staying on each page will be recorded.</p>
+        <button onclick="startForm()">Next</button>
+    </div>
+
+    <div class="container" id="questionPage1">
+        <h2>Question 1</h2>
+        <label for="fluid48hours1">Total fluid required in 48 hours:</label>
+        <input type="text" id="fluid48hours1">
+        <label for="dropRate1">Drop rate required (drops/min):</label>
+        <input type="text" id="dropRate1">
+        <label for="fluid6hours1">Total fluid to be given in first 6 hours:</label>
+        <input type="text" id="fluid6hours1">
+        <button onclick="nextPage()">Next</button>
+    </div>
+
+    <div class="container" id="questionPage2">
+        <h2>Question 2</h2>
+        <label for="fluid48hours1">Total fluid required in 48 hours:</label>
+        <input type="text" id="fluid48hours1">
+        <label for="dropRate1">Drop rate required (drops/min):</label>
+        <input type="text" id="dropRate1">
+        <label for="fluid6hours1">Total fluid to be given in first 6 hours:</label>
+        <input type="text" id="fluid6hours1">
+        <button onclick="nextPage()">Next</button>
+    </div>
+
+    <div class="container" id="questionPage3">
+        <h2>Question 3</h2>
+        <label for="fluid48hours1">Total fluid required in 48 hours:</label>
+        <input type="text" id="fluid48hours1">
+        <label for="dropRate1">Drop rate required (drops/min):</label>
+        <input type="text" id="dropRate1">
+        <label for="fluid6hours1">Total fluid to be given in first 6 hours:</label>
+        <input type="text" id="fluid6hours1">
+        <button onclick="nextPage()">Next</button>
+    </div>
+
+    <div class="container" id="questionPage4">
+        <h2>Question 4</h2>
+        <label for="fluid48hours1">Total fluid required in 48 hours:</label>
+        <input type="text" id="fluid48hours1">
+        <label for="dropRate1">Drop rate required (drops/min):</label>
+        <input type="text" id="dropRate1">
+        <label for="fluid6hours1">Total fluid to be given in first 6 hours:</label>
+        <input type="text" id="fluid6hours1">
+        <button onclick="nextPage()">Next</button>
+    </div>
+
+    <div class="container" id="questionPage5">
+        <h2>Question 5</h2>
+        <label for="fluid48hours1">Total fluid required in 48 hours:</label>
+        <input type="text" id="fluid48hours1">
+        <label for="dropRate1">Drop rate required (drops/min):</label>
+        <input type="text" id="dropRate1">
+        <label for="fluid6hours1">Total fluid to be given in first 6 hours:</label>
+        <input type="text" id="fluid6hours1">
+        <button onclick="nextPage()">Next</button>
+    </div>
+
+    <div class="container" id="questionPage6">
+        <h2>Question 6</h2>
+        <label for="fluid48hours1">Total fluid required in 48 hours:</label>
+        <input type="text" id="fluid48hours1">
+        <label for="dropRate1">Drop rate required (drops/min):</label>
+        <input type="text" id="dropRate1">
+        <label for="fluid6hours1">Total fluid to be given in first 6 hours:</label>
+        <input type="text" id="fluid6hours1">
+        <button onclick="nextPage()">Next</button>
+    </div>
+
+    <div class="container" id="questionPage7">
+        <h2>Question 7</h2>
+        <label for="fluid48hours1">Total fluid required in 48 hours:</label>
+        <input type="text" id="fluid48hours1">
+        <label for="dropRate1">Drop rate required (drops/min):</label>
+        <input type="text" id="dropRate1">
+        <label for="fluid6hours1">Total fluid to be given in first 6 hours:</label>
+        <input type="text" id="fluid6hours1">
+        <button onclick="nextPage()">Next</button>
+    </div>
+
+    <div class="container" id="questionPage8">
+        <h2>Question 8</h2>
+        <label for="fluid48hours1">Total fluid required in 48 hours:</label>
+        <input type="text" id="fluid48hours1">
+        <label for="dropRate1">Drop rate required (drops/min):</label>
+        <input type="text" id="dropRate1">
+        <label for="fluid6hours1">Total fluid to be given in first 6 hours:</label>
+        <input type="text" id="fluid6hours1">
+        <button onclick="nextPage()">Next</button>
+    </div>
+
+    <div class="container" id="questionPage9">
+        <h2>Question 9</h2>
+        <label for="fluid48hours1">Total fluid required in 48 hours:</label>
+        <input type="text" id="fluid48hours1">
+        <label for="dropRate1">Drop rate required (drops/min):</label>
+        <input type="text" id="dropRate1">
+        <label for="fluid6hours1">Total fluid to be given in first 6 hours:</label>
+        <input type="text" id="fluid6hours1">
+        <button onclick="nextPage()">Next</button>
+    </div>
+
+    <div class="container" id="questionPage10">
+        <h2>Question 10</h2>
+        <label for="fluid48hours1">Total fluid required in 48 hours:</label>
+        <input type="text" id="fluid48hours1">
+        <label for="dropRate1">Drop rate required (drops/min):</label>
+        <input type="text" id="dropRate1">
+        <label for="fluid6hours1">Total fluid to be given in first 6 hours:</label>
+        <input type="text" id="fluid6hours1">
+        <button onclick="submitForm()">Submit</button>
+    </div>
+
+    <div class="container" id="summaryPage" style="display: none;">
+        <h2>Summary</h2>
+        <p id="duration"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
